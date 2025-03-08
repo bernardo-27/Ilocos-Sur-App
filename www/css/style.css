@@ -1,0 +1,172 @@
+/* Main app styles */
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Map styles */
+#map {
+    height: 60vh;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Content area */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Attractions panel */
+.attractions-panel {
+    background: white;
+    padding: 15px;
+    height: 40vh;
+    overflow-y: auto;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.attractions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* City list styles */
+.city-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-item {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.city-item:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+}
+
+.city-item h5 {
+    margin: 0 0 5px 0;
+    color: #0d6efd;
+}
+
+.city-item p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Attraction card styles */
+.attraction-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    background: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.attraction-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.attraction-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+.attraction-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #0d6efd;
+}
+
+.attraction-card p {
+    margin: 0 0 12px 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Search styles */
+.search-result-item {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.search-result-item h6 {
+    color: #0d6efd;
+    margin-bottom: 4px;
+}
+
+/* Location details modal styles */
+.modal-body img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#locationDetails {
+    color: #495057;
+}
+
+#locationDetails h5 {
+    color: #0d6efd;
+    margin: 15px 0 8px 0;
+}
+
+#locationDetails ul {
+    padding-left: 20px;
+}
+
+#locationDetails li {
+    margin-bottom: 5px;
+}
+
+/* Nearby attractions styles */
+#nearbyAttractions .card {
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+}
+
+#nearbyAttractions .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#nearbyAttractions .card-img-top {
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #map {
+        height: 50vh;
+    }
+    
+    .attractions-panel {
+        height: 50vh;
+    }
+    
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+}
